@@ -18,6 +18,10 @@ public class DataSourceConfig {
     @Bean
     @Profile("prod")
     public DataSource postgresDataSource() {
+        log.info("driver:", dataSourceProperties.getDriverClassName());
+        log.info("url:" ,dataSourceProperties.getUrl());
+        log.info("user:" ,dataSourceProperties.getUsername());
+        log.info("password:" ,dataSourceProperties.getPassword());
         return DataSourceBuilder.create()
                 .driverClassName(dataSourceProperties.getDriverClassName())
                 .url(dataSourceProperties.getUrl())
