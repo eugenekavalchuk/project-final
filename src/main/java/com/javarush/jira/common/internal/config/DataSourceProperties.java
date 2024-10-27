@@ -17,12 +17,4 @@ public class DataSourceProperties {
     private String password;
     @NotNull
     private String driverClassName;
-//    @NotNull
-//    private String mailHost;
-//    @NotNull
-//    private String mailUserName;
-//    @NotNull
-//    private String mailPassword;
-//    @NotNull
-//    private String mailPort;
 }

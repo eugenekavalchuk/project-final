@@ -10,3 +10,30 @@ spring:
     driver-class-name: org.h2.Driver
   liquibase:
     changeLog: "classpath:changelog-test.sql"
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: "test-id"
+            client-secret: "test-secret"
+          google:
+            client-id: "test-id"
+            client-secret: "test-secret"
+          gitlab:
+            client-id: "test-id"
+            client-secret: "test-secret"
+            client-name: "test-name"
+            redirect-uri: "test"
+            authorization-grant-type: "test"
+        provider:
+          gitlab:
+            authorization-uri: "test"
+            token-uri: "test"
+            user-info-uri: "test"
+            user-name-attribute: "test"
+  mail:
+    host: smtp.gmail.com
+    username: jira4jr@gmail.com
+    password: zdfzsrqvgimldzyj
+    port: 587
